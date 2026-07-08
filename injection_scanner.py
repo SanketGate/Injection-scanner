@@ -449,13 +449,13 @@ def main():
 
     # Step 2: request file path
     if not args.request:
-        args.request = input("Step 2: Enter path to request file (e.g. request.txt): ").strip()
+        args.request = input("Step 2: Enter path to request file, file meed to be in txt format (e.g. request.txt): ").strip()
     if not Path(args.request).exists():
         sys.exit(f"Request file not found: {args.request}")
 
     # Step 3: payloads file path
     if not args.payloads:
-        args.payloads = input("Step 3: Enter path to payloads file (e.g. payloads.txt): ").strip()
+        args.payloads = input("Step 3: Enter path to payloads file, file meed to be in txt format and add one payload per line (e.g. payloads.txt): ").strip()
     if not Path(args.payloads).exists():
         sys.exit(f"Payloads file not found: {args.payloads}")
 
